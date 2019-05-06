@@ -41,7 +41,7 @@ const searchTheTerm = async searchTerm => {
     .then(await driver.findElement(iAmFeelingLuckyLocator).click());
 };
 
-async function openGoogle(searchTerm) {
+async function windowSwitcher(searchTerm) {
   await driver.switchTo().window(arrayDuplicate[arrayDuplicate.length - 1]);
   await searchTheTerm(searchTerm).then(arrayDuplicate.pop());
 }
@@ -49,7 +49,7 @@ async function openGoogle(searchTerm) {
 const mainLoop = async (arr, count) => {
   if (count <= arr.length - 1) {
     const searchTerm = arr[count].toString();
-    await openGoogle(searchTerm, count);
+    await windowSwitcher(searchTerm, count);
     const newCount = count + 1;
     mainLoop(arr, newCount);
   }
