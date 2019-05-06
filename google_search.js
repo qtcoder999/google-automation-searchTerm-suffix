@@ -17,11 +17,9 @@ async function openChrome() {
 }
 
 const openTabs = async count => {
-  if (count > 1){
-    await driver.executeScript("window.open(); window.focus();");
-    const newCount = count - 1;
-     return openTabs(newCount);
-  }
+  await driver.executeScript("window.open(); window.focus();");
+  const newCount = count - 1;
+  if (count > 1) return openTabs(newCount);
   return null;
 };
 
