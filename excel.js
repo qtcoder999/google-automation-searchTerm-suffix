@@ -1,5 +1,6 @@
-var fs = require("fs");
-var xlsx = require("node-xlsx");
+/* eslint-disable linebreak-style */
+const fs = require("fs");
+const xlsx = require("node-xlsx");
 
 // function walk(obj) {
 //   for (let i in obj) {
@@ -10,9 +11,9 @@ var xlsx = require("node-xlsx");
 //   }
 // }
 const getDataFromExcel = async () => {
-  var obj = xlsx.parse(__dirname + "/myFile.xlsx"); // parses a file
+  let obj = xlsx.parse(`${__dirname}/myFile.xlsx`); // parses a file
 
-  var obj = xlsx.parse(fs.readFileSync(__dirname + "/myFile.xlsx")); // parses a buffer
+  obj = xlsx.parse(fs.readFileSync(`${__dirname}/myFile.xlsx`)); // parses a buffer
 
   return obj;
   // walk(obj);

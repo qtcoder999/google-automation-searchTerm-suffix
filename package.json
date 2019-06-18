@@ -31,7 +31,6 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "husky": "^0.14.3",
     "lint-staged": "^4.3.0",
-    "node-xlsx": "^0.12.1",
     "prettier": "^1.17.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-wandi": "^1.2.0",
@@ -46,6 +45,7 @@
   },
   "dependencies": {
     "chromedriver": "^2.46.0",
-    "selenium-webdriver": "^4.0.0-alpha.1"
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "node-xlsx": "^0.12.1"
   }
 }
