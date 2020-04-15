@@ -15,6 +15,7 @@ Give this script a search term and it will find results for you and export them 
  - fire selenium scripts
  
 6) error handling on rainy cases
+7) URLs and CSS selectors should come from a configuration file
 
 ## Enhancements
 1) Give support for other search engines
