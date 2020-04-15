@@ -16,6 +16,7 @@ Give this script a search term and it will find results for you and export them 
  
 6) error handling on rainy cases
 7) URLs and CSS selectors should come from a configuration file
+8) Remove bugs recorded in the evernote
 
 ## Enhancements
 1) Give support for other search engines
